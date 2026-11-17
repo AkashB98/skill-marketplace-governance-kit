@@ -1,0 +1,137 @@
+{
+  "cases": [
+    {
+      "detail": "illegal_transition:draft->published",
+      "id": "illegal_draft_to_published",
+      "passed": true
+    },
+    {
+      "detail": "illegal_transition:draft->retired",
+      "id": "illegal_draft_to_retired",
+      "passed": true
+    },
+    {
+      "detail": "illegal_transition:retired->draft",
+      "id": "illegal_retired_to_draft",
+      "passed": true
+    },
+    {
+      "detail": "illegal_transition:retired->published",
+      "id": "illegal_retired_to_published",
+      "passed": true
+    },
+    {
+      "detail": "illegal_transition:published->draft",
+      "id": "illegal_published_to_draft",
+      "passed": true
+    },
+    {
+      "detail": "illegal_transition:published->in_review",
+      "id": "illegal_published_to_in_review",
+      "passed": true
+    },
+    {
+      "detail": "illegal_transition:deprecated->published",
+      "id": "illegal_deprecated_to_published",
+      "passed": true
+    },
+    {
+      "detail": "illegal_transition:in_review->deprecated",
+      "id": "illegal_in_review_to_deprecated",
+      "passed": true
+    },
+    {
+      "detail": "contract_check_failed",
+      "id": "gate_contract-broken",
+      "passed": true
+    },
+    {
+      "detail": "eval_score_below_threshold",
+      "id": "gate_eval-low",
+      "passed": true
+    },
+    {
+      "detail": "eval_evidence_missing",
+      "id": "gate_eval-missing",
+      "passed": true
+    },
+    {
+      "detail": "owner_missing",
+      "id": "gate_ownerless-plugin",
+      "passed": true
+    },
+    {
+      "detail": "version_not_increased",
+      "id": "gate_version-stalled",
+      "passed": true
+    },
+    {
+      "detail": "pass",
+      "id": "gate_clean_skill_passes",
+      "passed": true
+    },
+    {
+      "detail": "briefing-builder,doc-summarizer,email-drafter,executive-brief,knowledge-search,support-responder,ticket-triage",
+      "id": "blast_hub_skills_exact",
+      "passed": true
+    },
+    {
+      "detail": "Briefing Agent,Executive Agent,Helpdesk Agent,Outreach Agent,Research Agent,Support Agent",
+      "id": "blast_hub_agents_exact",
+      "passed": true
+    },
+    {
+      "detail": "legacy-parser deprecated",
+      "id": "blast_hub_excludes_deprecated",
+      "passed": true
+    },
+    {
+      "detail": "empty",
+      "id": "blast_leaf_empty",
+      "passed": true
+    },
+    {
+      "detail": "adopt score=5 timebox=3",
+      "id": "intake_prop-adopt-a",
+      "passed": true
+    },
+    {
+      "detail": "adopt score=5 timebox=2",
+      "id": "intake_prop-adopt-b",
+      "passed": true
+    },
+    {
+      "detail": "wait score=4 timebox=3",
+      "id": "intake_prop-wait-a",
+      "passed": true
+    },
+    {
+      "detail": "wait score=3 timebox=4",
+      "id": "intake_prop-wait-b",
+      "passed": true
+    },
+    {
+      "detail": "pass score=1 timebox=8",
+      "id": "intake_prop-pass-a",
+      "passed": true
+    },
+    {
+      "detail": "pass score=1 timebox=9",
+      "id": "intake_prop-pass-b",
+      "passed": true
+    },
+    {
+      "detail": "0 findings",
+      "id": "check_seeded_registry_clean",
+      "passed": true
+    },
+    {
+      "detail": "stable",
+      "id": "determinism_gate_repeat",
+      "passed": true
+    }
+  ],
+  "failed": 0,
+  "passed": 26,
+  "total": 26
+}
