@@ -1,0 +1,280 @@
+[
+  {
+    "consumed_by": [
+      "Research Agent"
+    ],
+    "contract_check": "pass",
+    "depends_on": [],
+    "eval_evidence": {
+      "present": true,
+      "score": 0.92,
+      "threshold": 0.85
+    },
+    "id": "core-retrieval",
+    "lifecycle_state": "published",
+    "name": "Core Retrieval",
+    "owner": "Priya Nair",
+    "previous_published_version": "2.0.0",
+    "version": "2.1.0"
+  },
+  {
+    "consumed_by": [
+      "Briefing Agent"
+    ],
+    "contract_check": "pass",
+    "depends_on": [
+      "core-retrieval"
+    ],
+    "eval_evidence": {
+      "present": true,
+      "score": 0.89,
+      "threshold": 0.8
+    },
+    "id": "doc-summarizer",
+    "lifecycle_state": "published",
+    "name": "Doc Summarizer",
+    "owner": "Marco Silva",
+    "previous_published_version": "1.3.0",
+    "version": "1.4.0"
+  },
+  {
+    "consumed_by": [
+      "Support Agent"
+    ],
+    "contract_check": "pass",
+    "depends_on": [
+      "core-retrieval"
+    ],
+    "eval_evidence": {
+      "present": true,
+      "score": 0.88,
+      "threshold": 0.8
+    },
+    "id": "ticket-triage",
+    "lifecycle_state": "published",
+    "name": "Ticket Triage",
+    "owner": "Lena Ortiz",
+    "previous_published_version": "1.1.0",
+    "version": "1.2.0"
+  },
+  {
+    "consumed_by": [
+      "Research Agent",
+      "Helpdesk Agent"
+    ],
+    "contract_check": "pass",
+    "depends_on": [
+      "core-retrieval"
+    ],
+    "eval_evidence": {
+      "present": true,
+      "score": 0.91,
+      "threshold": 0.85
+    },
+    "id": "knowledge-search",
+    "lifecycle_state": "published",
+    "name": "Knowledge Search",
+    "owner": "Ken Watanabe",
+    "previous_published_version": "2.9.0",
+    "version": "3.0.0"
+  },
+  {
+    "consumed_by": [
+      "Outreach Agent"
+    ],
+    "contract_check": "pass",
+    "depends_on": [
+      "doc-summarizer"
+    ],
+    "eval_evidence": {
+      "present": true,
+      "score": 0.86,
+      "threshold": 0.8
+    },
+    "id": "email-drafter",
+    "lifecycle_state": "published",
+    "name": "Email Drafter",
+    "owner": "Sofia Rossi",
+    "previous_published_version": "1.0.0",
+    "version": "1.1.0"
+  },
+  {
+    "consumed_by": [
+      "Briefing Agent"
+    ],
+    "contract_check": "pass",
+    "depends_on": [
+      "doc-summarizer",
+      "knowledge-search"
+    ],
+    "eval_evidence": {
+      "present": true,
+      "score": 0.9,
+      "threshold": 0.85
+    },
+    "id": "briefing-builder",
+    "lifecycle_state": "published",
+    "name": "Briefing Builder",
+    "owner": "David Okafor",
+    "previous_published_version": "1.9.0",
+    "version": "2.0.0"
+  },
+  {
+    "consumed_by": [
+      "Support Agent"
+    ],
+    "contract_check": "pass",
+    "depends_on": [
+      "ticket-triage"
+    ],
+    "eval_evidence": {
+      "present": true,
+      "score": 0.87,
+      "threshold": 0.8
+    },
+    "id": "support-responder",
+    "lifecycle_state": "published",
+    "name": "Support Responder",
+    "owner": "Ana Costa",
+    "previous_published_version": "1.2.0",
+    "version": "1.3.0"
+  },
+  {
+    "consumed_by": [
+      "Executive Agent"
+    ],
+    "contract_check": "pass",
+    "depends_on": [
+      "briefing-builder"
+    ],
+    "eval_evidence": {
+      "present": true,
+      "score": 0.93,
+      "threshold": 0.85
+    },
+    "id": "executive-brief",
+    "lifecycle_state": "published",
+    "name": "Executive Brief",
+    "owner": "Raj Patel",
+    "previous_published_version": "0.9.0",
+    "version": "1.0.0"
+  },
+  {
+    "consumed_by": [
+      "Scheduling Agent"
+    ],
+    "contract_check": "pass",
+    "depends_on": [],
+    "eval_evidence": {
+      "present": true,
+      "score": 0.9,
+      "threshold": 0.8
+    },
+    "id": "calendar-helper",
+    "lifecycle_state": "published",
+    "name": "Calendar Helper",
+    "owner": "Maya Chen",
+    "previous_published_version": "1.4.0",
+    "version": "1.5.0"
+  },
+  {
+    "consumed_by": [
+      "Legacy Agent"
+    ],
+    "contract_check": "pass",
+    "depends_on": [
+      "core-retrieval"
+    ],
+    "eval_evidence": {
+      "present": true,
+      "score": 0.84,
+      "threshold": 0.8
+    },
+    "id": "legacy-parser",
+    "lifecycle_state": "deprecated",
+    "name": "Legacy Parser",
+    "owner": "Tom Becker",
+    "previous_published_version": "0.7.0",
+    "version": "0.8.0"
+  },
+  {
+    "consumed_by": [],
+    "contract_check": "pass",
+    "depends_on": [],
+    "eval_evidence": {
+      "present": true,
+      "score": 0.9,
+      "threshold": 0.8
+    },
+    "id": "ownerless-plugin",
+    "lifecycle_state": "in_review",
+    "name": "Ownerless Plugin",
+    "owner": "",
+    "previous_published_version": null,
+    "version": "1.0.0"
+  },
+  {
+    "consumed_by": [],
+    "contract_check": "fail",
+    "depends_on": [],
+    "eval_evidence": {
+      "present": true,
+      "score": 0.9,
+      "threshold": 0.8
+    },
+    "id": "contract-broken",
+    "lifecycle_state": "in_review",
+    "name": "Contract Broken",
+    "owner": "Ivy Zhang",
+    "previous_published_version": null,
+    "version": "1.0.0"
+  },
+  {
+    "consumed_by": [],
+    "contract_check": "pass",
+    "depends_on": [],
+    "eval_evidence": {
+      "present": false,
+      "score": null,
+      "threshold": 0.8
+    },
+    "id": "eval-missing",
+    "lifecycle_state": "in_review",
+    "name": "Eval Missing",
+    "owner": "Omar Farouk",
+    "previous_published_version": null,
+    "version": "1.0.0"
+  },
+  {
+    "consumed_by": [],
+    "contract_check": "pass",
+    "depends_on": [],
+    "eval_evidence": {
+      "present": true,
+      "score": 0.6,
+      "threshold": 0.85
+    },
+    "id": "eval-low",
+    "lifecycle_state": "in_review",
+    "name": "Eval Low",
+    "owner": "Nina Petrova",
+    "previous_published_version": null,
+    "version": "1.0.0"
+  },
+  {
+    "consumed_by": [],
+    "contract_check": "pass",
+    "depends_on": [],
+    "eval_evidence": {
+      "present": true,
+      "score": 0.9,
+      "threshold": 0.8
+    },
+    "id": "version-stalled",
+    "lifecycle_state": "in_review",
+    "name": "Version Stalled",
+    "owner": "Chris Doyle",
+    "previous_published_version": "1.0.0",
+    "version": "1.0.0"
+  }
+]
