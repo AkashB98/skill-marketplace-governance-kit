@@ -1,0 +1,56 @@
+[
+  {
+    "duplicate_of": null,
+    "eval_plan_present": true,
+    "id": "prop-adopt-a",
+    "name": "Slide Outline Builder",
+    "owner": "Hana Kim",
+    "success_criteria_defined": true,
+    "timebox_weeks": 3
+  },
+  {
+    "duplicate_of": null,
+    "eval_plan_present": true,
+    "id": "prop-adopt-b",
+    "name": "Changelog Writer",
+    "owner": "Leo Martins",
+    "success_criteria_defined": true,
+    "timebox_weeks": 2
+  },
+  {
+    "duplicate_of": null,
+    "eval_plan_present": false,
+    "id": "prop-wait-a",
+    "name": "FAQ Answer Drafter",
+    "owner": "Erin Walsh",
+    "success_criteria_defined": true,
+    "timebox_weeks": 3
+  },
+  {
+    "duplicate_of": null,
+    "eval_plan_present": false,
+    "id": "prop-wait-b",
+    "name": "Survey Summarizer",
+    "owner": "Paul Novak",
+    "success_criteria_defined": false,
+    "timebox_weeks": 4
+  },
+  {
+    "duplicate_of": "doc-summarizer",
+    "eval_plan_present": false,
+    "id": "prop-pass-a",
+    "name": "Doc Summarizer Clone",
+    "owner": "",
+    "success_criteria_defined": true,
+    "timebox_weeks": 8
+  },
+  {
+    "duplicate_of": null,
+    "eval_plan_present": false,
+    "id": "prop-pass-b",
+    "name": "Unscoped Helper",
+    "owner": "",
+    "success_criteria_defined": false,
+    "timebox_weeks": 9
+  }
+]
